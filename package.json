@@ -7,6 +7,7 @@
     "@npm.piece/ui-kit": "^0.0.138",
     "@npm.piece/utils": "^1.0.150",
     "@reduxjs/toolkit": "^1.9.5",
+    "build": "^0.1.4",
     "clsx": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
