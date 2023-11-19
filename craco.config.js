@@ -35,14 +35,6 @@ module.exports = {
         const publicPath = `//${process.env.HOST}:${process.env.PORT}/`
         console.log(publicPath)
         webpackConfig.output.publicPath = publicPath
-      } else {
-        const publicPath = `${process.env.REACT_APP_PUBLIC_PATH}`
-        const path = `//${format(
-          `${process.env.HOST}:${process.env.PORT}${publicPath}`
-        )}`
-        console.log('auth path: ', path)
-
-        webpackConfig.output.publicPath = path
       }
       webpackConfig.resolve = webpackConfig.resolve || {}
       webpackConfig.resolve.fallback = webpackConfig.resolve.fallback || {}
