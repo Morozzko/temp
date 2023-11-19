@@ -1,0 +1,64 @@
+{
+  "name": "react_blank",
+  "version": "0.1.217",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@npm.piece/ui-kit": "^0.0.138",
+    "@npm.piece/utils": "^1.0.150",
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.16.0",
+    "redux": "^4.2.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start",
+    "dev": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eslint": "eslint --fix --ext .js,.jsx,.tsx,ts ."
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@npm.piece/eslint-config": "^1.0.37",
+    "@npm.piece/tailwind-config": "^1.0.35",
+    "@npm.piece/types": "^1.0.11",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "18.2.0",
+    "@types/react-helmet": "^6.1.6",
+    "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.4.16",
+    "process": "^0.11.10",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "webpack-bundle-analyzer": "^4.9.1"
+  },
+  "overrides": {
+    "typescript": "^5.2.2"
+  }
+}
