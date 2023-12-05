@@ -52,3 +52,41 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('./assets/fonts/Robotocondensedlight.woff2') format('woff2'), url('./assets/fonts/Robotocondensedlight.woff') format('woff'), url('./assets/fonts/Robotocondensedlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url('./assets/fonts/Robotocondensedlightitalic.woff2') format('woff2'), url('./assets/fonts/Robotocondensedlightitalic.woff') format('woff'), url('./assets/fonts/Robotocondensedlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('./assets/fonts/Robotocondensed.woff2') format('woff2'), url('./assets/fonts/Robotocondensed.woff') format('woff'), url('./assets/fonts/Robotocondensed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url('./assets/fonts/Robotocondenseditalic.woff2') format('woff2'), url('./assets/fonts/Robotocondenseditalic.woff') format('woff'), url('./assets/fonts/Robotocondenseditalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('./assets/fonts/Robotocondensedbold.woff2') format('woff2'), url('./assets/fonts/Robotocondensedbold.woff') format('woff'), url('./assets/fonts/Robotocondensedbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url('./assets/fonts/Robotocondensedbolditalic.woff2') format('woff2'), url('./assets/fonts/Robotocondensedbolditalic.woff') format('woff'), url('./assets/fonts/Robotocondensedbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

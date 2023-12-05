@@ -1,6 +1,6 @@
 {
   "extends": [
-    "@npm.piece/eslint-config"
+    "./lint-config.js"
   ],
   "parserOptions": {
     "ecmaVersion": 2020,

@@ -1,5 +1,5 @@
-import { Flex } from '@npm.piece/ui-kit'
 import React from 'react'
+import { Flex } from '@components/atoms'
 
 type OwnPropertyType = {}
 

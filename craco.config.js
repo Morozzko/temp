@@ -1,10 +1,5 @@
 const path = require('path')
 
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-
-const format = url =>
-  url.replaceAll('http://', '').replaceAll('https://', '').replaceAll('//', '/')
-
 module.exports = {
   webpack: {
     alias: {
@@ -23,33 +18,37 @@ module.exports = {
       '@widgets': path.resolve(__dirname, 'src/features/widgets/'),
     },
     plugins: {
-      add: [
-        // new BundleAnalyzerPlugin()
-      ],
-      remove: [
-        /* ... */
-      ],
+      add: [],
+      remove: [],
     },
-    configure: (webpackConfig, { env }) => {
-      if (env === 'development') {
-        const publicPath = `//${process.env.HOST}:${process.env.PORT}/`
-        console.log(publicPath)
-        webpackConfig.output.publicPath = publicPath
-      }
-      webpackConfig.resolve = webpackConfig.resolve || {}
-      webpackConfig.resolve.fallback = webpackConfig.resolve.fallback || {}
-      webpackConfig.resolve.fallback.process =
-        require.resolve('process/browser')
-
-      webpackConfig.devServer = {
-        ...webpackConfig.devServer,
-        devMiddleware: {
-          writeToDisk: true,
-        },
-      }
-
-      return webpackConfig
-    },
+    // configure: (webpackConfig, { env }) => {
+    //   if (env === 'development') {
+    //     const publicPath = `//${process.env.HOST}:${process.env.PORT}/`
+    //     console.log(publicPath)
+    //     webpackConfig.output.publicPath = publicPath
+    //   } else {
+    //     const publicPath = `${process.env.REACT_APP_PUBLIC_PATH}`
+    //     const path = `//${format(
+    //       `${process.env.HOST}:${process.env.PORT}${publicPath}`
+    //     )}`
+    //     console.log('auth path: ', path)
+    //
+    //     webpackConfig.output.publicPath = path
+    //   }
+    //   webpackConfig.resolve = webpackConfig.resolve || {}
+    //   webpackConfig.resolve.fallback = webpackConfig.resolve.fallback || {}
+    //   webpackConfig.resolve.fallback.process =
+    //     require.resolve('process/browser')
+    //
+    //   webpackConfig.devServer = {
+    //     ...webpackConfig.devServer,
+    //     devMiddleware: {
+    //       writeToDisk: true,
+    //     },
+    //   }
+    //
+    //   return webpackConfig
+    // },
   },
   jest: {
     configure(config) {

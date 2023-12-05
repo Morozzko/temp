@@ -2,8 +2,7 @@ import { useMemo } from 'react'
 import { useDispatch } from 'react-redux'
 import { ActionCreatorsMapObject, bindActionCreators } from 'redux'
 import { AppDispatchType } from '@app/store/store'
-import { Actions as logsActions } from '@services/logs/'
-import { Actions as timersActions } from '@services/timers/'
+import { Actions as appSizeActions } from '@services/appSize/'
 
 // useAppActions - этот хук использует useActions для создания объектов действий для различных сервисов.
 // Затем он возвращает объект, содержащий все эти действия, сгруппированные по сервисам, что упрощает их использование
@@ -22,8 +21,7 @@ export const useAppActions = () => {
   return useMemo(
     () => ({
       // insert actions here
-      logs: createAction(logsActions),
-      timers: createAction(timersActions),
+      appSize: createAction(appSizeActions),
     }),
     []
   )

@@ -1,4 +1,4 @@
-const config = require('@npm.piece/tailwind-config/tailwind.config')
+const config = require('./tailwind.config')
 
 module.exports = {
   plugins: {
